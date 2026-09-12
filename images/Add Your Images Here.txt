@@ -1,0 +1,8 @@
+This folder is reserved for your future portfolio images and videos:
+
+- Profile image (e.g. profile.jpg or avatar.png)
+- Project screenshots and media
+- Aviation, gaming, travel, and hobby pictures
+- Video files or embeds
+
+Place your files here and update the corresponding image/video tags in the HTML files.

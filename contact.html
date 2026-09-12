@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Developer Portfolio</title>
+    <meta name="description" content="Get in touch with the developer for questions, collaborations, or project inquiries." />
+    <meta property="og:title" content="Contact | Developer Portfolio" />
+    <meta property="og:description" content="Reach out to the developer via email or GitHub." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Site Navigation -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <div class="nav-left-group">
+          <!-- Ribbon Logo Mark -->
+          <a href="index.html" class="brand-logo-mark" id="brand-logo">
+            <div class="brand-ribbon-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 31V9H21C25.5 9 26.5 19 20.5 19H11H22C27 19 27.5 31 21.5 31H11" stroke="url(#ribbon-grad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="ribbon-grad" x1="6" y1="9" x2="34" y2="31" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00F298"/>
+                    <stop offset="35%" stop-color="#00D8F6"/>
+                    <stop offset="70%" stop-color="#EC4899"/>
+                    <stop offset="100%" stop-color="#A855F7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="brand-titles">
+              <span class="brand-author-name">[Your Name]</span>
+              <span class="brand-author-role">[Role / Tagline]</span>
+            </div>
+          </a>
+
+          <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link" id="nav-home">Home</a>
+            <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            <a href="fun-facts.html" class="nav-link" id="nav-facts">Fun Facts</a>
+            <a href="contact.html" class="nav-link active" id="nav-contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="nav-clock-widget" id="clock-widget">
+          <span class="clock-live-indicator"></span>
+          <span class="clock-date-text" id="live-date">Today</span>
+          <span class="clock-time-text" id="live-time">00:00</span>
+        </div>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Communication</span>
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-subtitle">
+              Have a question, an exciting project idea, or just want to discuss web development? Feel free to reach out to me!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Details & Social Cards -->
+            <div class="contact-info-panel">
+              <div class="contact-direct-card red-card" id="card-contact-email">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-content">
+                  <h3>Direct Email</h3>
+                  <a href="mailto:your-email@example.com" id="link-email">your-email@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-direct-card" id="card-contact-github">
+                <div class="contact-card-icon">&lt;/&gt;</div>
+                <div class="contact-card-content">
+                  <h3>GitHub Profile</h3>
+                  <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" id="link-github">
+                    github.com/[your-username] ↗
+                  </a>
+                </div>
+              </div>
+
+              <div class="card" id="contact-bio-summary">
+                <span class="badge badge-gold">Quick Summary</span>
+                <h3 style="margin-top: 0.75rem; margin-bottom: 0.5rem; color: var(--color-white);">
+                  [Your Name]
+                </h3>
+                <p style="margin-bottom: 0.75rem;">
+                  Young Web Developer at [Organization / School], building accessible web experiences and exploring creative technology.
+                </p>
+                <p style="font-size: 0.92rem; color: var(--color-gold);">
+                  📍 Based in [Location / Country] · [Career Goal]
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" id="contact-form-wrapper">
+              <span class="form-badge">Demo Contact Form</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-white);">
+                Send a Message
+              </h2>
+              <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Note: This is a front-end demo form. Messages are handled locally on this page. To reach me directly, use my email link on the left!
+              </p>
+
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name-input" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    id="name-input"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email-input" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    id="email-input"
+                    class="form-input"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message-input" class="form-label">Message</label>
+                  <textarea
+                    id="message-input"
+                    class="form-textarea"
+                    rows="5"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%;">
+                  Send Message
+                </button>
+              </form>
+
+              <div class="form-feedback" id="form-feedback">
+                <strong>Thank you for your message!</strong><br />
+                As this is a demo contact form, please also send your note directly to 
+                <a href="mailto:your-email@example.com" style="color: var(--color-gold); text-decoration: underline;">
+                  your-email@example.com
+                </a> to guarantee a prompt response.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h4>[Your Name]</h4>
+            <p class="footer-role">Young Web Developer at [Organization / School]</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:your-email@example.com">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 [Your Name]. Built with passion and creativity.</p>
+          <p>Young Web Developer at [Organization / School]</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function updateLiveClock() {
+        const dateEl = document.getElementById('live-date');
+        const timeEl = document.getElementById('live-time');
+        if (!dateEl || !timeEl) return;
+
+        const now = new Date();
+        const dateOptions = { weekday: 'short', month: 'short', day: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('en-US', dateOptions);
+
+        const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+        timeEl.textContent = now.toLocaleTimeString('en-US', timeOptions);
+      }
+      updateLiveClock();
+      setInterval(updateLiveClock, 1000);
+
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', () => {
+          const isOpen = navMenu.classList.toggle('nav-open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+
+      // Demo Form Handling
+      const contactForm = document.getElementById('contact-form');
+      const formFeedback = document.getElementById('form-feedback');
+
+      if (contactForm && formFeedback) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          formFeedback.style.display = 'block';
+          contactForm.reset();
+        });
+      }
+    </script>
+  </body>
+</html>

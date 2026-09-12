@@ -1,0 +1,6 @@
+{
+  "name": "Developer Portfolio",
+  "description": "Personal developer portfolio website showcasing projects, technical skills, and achievements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

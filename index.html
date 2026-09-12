@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <meta name="description" content="Personal developer portfolio website showcasing projects, technical skills, and achievements." />
+    <meta property="og:title" content="Developer Portfolio" />
+    <meta property="og:description" content="Personal developer portfolio website showcasing projects, technical skills, and achievements." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Site Navigation (Inspired by Modern Studio Design with Live Time & Date) -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <div class="nav-left-group">
+          <!-- Ribbon Logo Mark inspired by Modern Studio Design - Geometric "B" -->
+          <a href="index.html" class="brand-logo-mark" id="brand-logo">
+            <div class="brand-ribbon-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 31V9H21C25.5 9 26.5 19 20.5 19H11H22C27 19 27.5 31 21.5 31H11" stroke="url(#ribbon-grad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="ribbon-grad" x1="6" y1="9" x2="34" y2="31" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00F298"/>
+                    <stop offset="35%" stop-color="#00D8F6"/>
+                    <stop offset="70%" stop-color="#EC4899"/>
+                    <stop offset="100%" stop-color="#A855F7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="brand-titles">
+              <span class="brand-author-name">[Your Name]</span>
+              <span class="brand-author-role">[Role / Tagline]</span>
+            </div>
+          </a>
+
+          <!-- Navigation Links -->
+          <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+            <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            <a href="fun-facts.html" class="nav-link" id="nav-facts">Fun Facts</a>
+            <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Live Clock Widget (Top Right) -->
+        <div class="nav-clock-widget" id="clock-widget">
+          <span class="clock-live-indicator"></span>
+          <span class="clock-date-text" id="live-date">Today</span>
+          <span class="clock-time-text" id="live-time">00:00</span>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Centered Hero Section -->
+      <section class="hero-centered" id="hero">
+        <div class="container">
+          <h1 class="hero-main-title">[Your Name]</h1>
+
+          <p class="hero-tagline">
+            Young Web Developer | Creative Technologist | [Future Career Goal]
+          </p>
+
+          <p class="hero-bio-summary">
+            I am a passionate young web developer. [Add your bio summary here: your journey, technologies you love, and personal ambitions.]
+          </p>
+
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary" id="btn-view-projects">
+              View My Projects
+            </a>
+            <a href="contact.html" class="btn btn-secondary" id="btn-contact-me">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-badges-row">
+            <span class="badge">Preferred Name: [Preferred Name]</span>
+            <span class="badge">Age: [Your Age]</span>
+            <span class="badge">[Location / Country]</span>
+            <span class="badge badge-green">[Team / School / Org]</span>
+            <span class="badge badge-blue">[Career Goal / Vision]</span>
+          </div>
+
+          <!-- Futuristic Workstation Centerpiece (William Le Setup) -->
+          <div class="workstation-container" id="workstation-art">
+            <!-- Top App Dock Trays -->
+            <div class="workstation-top-docks">
+              <div class="app-dock-tray">
+                <div class="dock-icon-box icon-yellow-star" title="Star / Favs">★</div>
+                <div class="dock-icon-box icon-snapchat" title="Snapchat">👻</div>
+                <div class="dock-icon-box icon-unity" title="Unity 3D">⬡</div>
+                <div class="dock-icon-box icon-gradient-sphere" title="3D Design">●</div>
+              </div>
+
+              <div class="app-dock-tray">
+                <div class="dock-icon-box icon-figma" title="Figma">❖</div>
+                <div class="dock-icon-box icon-notion" title="Notion">N</div>
+                <div class="dock-icon-box icon-creative-cloud" title="Creative Cloud">∞</div>
+                <div class="dock-icon-box icon-procreate" title="Procreate">🖌️</div>
+              </div>
+            </div>
+
+            <!-- The 3 Floating Workstation Screens -->
+            <div class="workstation-screens-row">
+              <!-- Left Screen: 3D Studio & Purple "Ar" Badge -->
+              <div class="screen-frame">
+                <div class="screen-header-bar">
+                  <div class="screen-dots">
+                    <span class="screen-dot dot-red"></span>
+                    <span class="screen-dot dot-yellow"></span>
+                    <span class="screen-dot dot-green"></span>
+                  </div>
+                </div>
+                <div class="screen-content-box">
+                  <div class="screen-ar-badge">Ar</div>
+                  <div class="screen-ar-lines">
+                    <span class="ar-line"></span>
+                    <span class="ar-line"></span>
+                    <span class="ar-line"></span>
+                  </div>
+                  <div class="isometric-room-visual">
+                    <span>✈️</span>
+                    <div class="isometric-caption">Flight Sim &amp; 3D</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Center Screen: UX Flowchart Board & Green "Ux" Badge -->
+              <div class="screen-frame" style="transform: scale(1.05);">
+                <div class="screen-header-bar">
+                  <div class="screen-dots">
+                    <span class="screen-dot dot-red"></span>
+                    <span class="screen-dot dot-yellow"></span>
+                    <span class="screen-dot dot-green"></span>
+                  </div>
+                </div>
+                <div class="screen-content-box">
+                  <div class="screen-ux-badge">Ux</div>
+                  <div class="screen-ux-lines">
+                    <span class="ar-line"></span>
+                    <span class="ar-line"></span>
+                    <span class="ar-line"></span>
+                  </div>
+                  <div class="ux-flow-board">
+                    <div class="flow-cards-row">
+                      <div class="flow-card-mini green">Code</div>
+                      <div class="flow-card-mini">Web Dev</div>
+                      <div class="flow-card-mini purple">Portfolio</div>
+                    </div>
+                    <svg class="flow-lines-svg" viewBox="0 0 160 38" fill="none">
+                      <path d="M20 10C50 10 70 28 100 28C130 28 140 12 155 12" stroke="#94A3B8" stroke-width="2" stroke-dasharray="3 3"/>
+                      <circle cx="20" cy="10" r="3.5" fill="#10B981"/>
+                      <circle cx="100" cy="28" r="3.5" fill="#00D8F6"/>
+                      <circle cx="155" cy="12" r="3.5" fill="#A855F7"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Screen: DJ DAW Spectrum & Blue "Dj" Badge -->
+              <div class="screen-frame">
+                <div class="screen-header-bar">
+                  <div class="screen-dots">
+                    <span class="screen-dot dot-red"></span>
+                    <span class="screen-dot dot-yellow"></span>
+                    <span class="screen-dot dot-green"></span>
+                  </div>
+                </div>
+                <div class="screen-content-box">
+                  <div class="screen-dj-badge">Dj</div>
+                  <div class="screen-dj-lines">
+                    <span class="dj-neon-bar-pink"></span>
+                    <span class="dj-neon-bar-cyan"></span>
+                  </div>
+                  <div class="dj-equalizer-lanes">
+                    <div class="dj-lane"><div class="dj-lane-fill lane-cyan"></div></div>
+                    <div class="dj-lane"><div class="dj-lane-fill lane-yellow"></div></div>
+                    <div class="dj-lane"><div class="dj-lane-fill lane-magenta"></div></div>
+                    <div class="dj-lane"><div class="dj-lane-fill lane-emerald"></div></div>
+                  </div>
+                  <div class="dj-knobs-row">
+                    <div class="dj-knob-circle"></div>
+                    <div class="dj-knob-circle"></div>
+                    <div class="dj-knob-circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Foreground: Clothes Rack, Developer Character at Desk, VR Stool -->
+            <div class="workstation-foreground">
+              <!-- Left: Garment Clothes Rack -->
+              <div class="garment-rack">
+                <div class="rack-pole-top"></div>
+                <div class="hanger-item">
+                  <div class="hanger-wire"></div>
+                  <div class="tshirt-graphic">
+                    <span class="tshirt-brand-label">[Brand]</span>
+                  </div>
+                </div>
+                <div class="rack-bottom-shelf">
+                  <span class="book-virgil">ICONS</span>
+                  <span class="book-vogue">TECH</span>
+                </div>
+              </div>
+
+              <!-- Center: Desk with Apple Studio Display & Hello Script + Developer Avatar -->
+              <div class="center-desk-unit">
+                <div class="apple-studio-display">
+                  <div class="studio-screen-glass">
+                    <span class="studio-hello-cursive">hello</span>
+                  </div>
+                  <div class="studio-stand-neck"></div>
+                  <div class="studio-stand-foot"></div>
+                </div>
+
+                <div class="minimal-desk-surface"></div>
+                <div class="desk-accessories-row">
+                  <div class="desk-pencil-pot"></div>
+                  <div class="desk-white-keyboard"></div>
+                </div>
+
+                <!-- Illustrated Developer Character at Desk -->
+                <div class="character-developer-box">
+                  <div class="avatar-figure">
+                    <div class="avatar-head-headphones">
+                      <div class="avatar-earcups">
+                        <span class="earcup"></span>
+                        <span class="earcup"></span>
+                      </div>
+                    </div>
+                    <div class="avatar-torso-sweater">
+                      <div class="sweater-collar"></div>
+                    </div>
+                    <div class="laptop-on-lap">
+                      <span class="apple-glow-logo"></span>
+                    </div>
+                    <div class="avatar-legs-sneakers">
+                      <div class="avatar-leg"></div>
+                      <div class="avatar-leg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Side Stool with VR Headset & Soccer Ball -->
+              <div class="vr-side-stool-unit">
+                <div class="side-stool">
+                  <div class="vr-headset-prop">
+                    <div class="vr-visor-glass"></div>
+                  </div>
+                </div>
+                <div class="soccer-ball-sphere">⚽</div>
+              </div>
+            </div>
+
+            <!-- Developer Profile Identity Card (Authentic User Photo) -->
+            <div class="developer-profile-card" id="profile-container">
+              <div class="station-avatar-circle">
+                <img src="images/avatar.jpg" alt="[Your Name] Profile Photo" class="station-avatar-img" />
+              </div>
+              <div class="station-avatar-meta">
+                <span class="station-avatar-name">[Your Name]</span>
+                <span class="station-avatar-desc">Young Web Developer at [Organization / School] · [Career Goal]</span>
+                <div class="station-avatar-pills">
+                  <span class="avatar-pill">[Country / Location]</span>
+                  <span class="avatar-pill">[Your Age]</span>
+                  <span class="avatar-pill highlight">⚡ Started coding at [Age]</span>
+                  <span class="avatar-pill highlight">💻 [Key Milestone / Project]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Background</span>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-box">
+            <p class="about-text">
+              I am a passionate young web developer. [Add your personal bio here: describe your background, when and how you got into coding, what technologies you love building with, and what drives your curiosity.] Outside coding, I enjoy gaming, sports, travelling, music, and aviation. My future goal is to [Your Future Career Goal] while continuing to create beautiful digital experiences.
+            </p>
+
+            <div class="details-grid">
+              <div class="detail-item">
+                <div class="detail-label">Full Name</div>
+                <div class="detail-value">[Your Full Name]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Preferred Name</div>
+                <div class="detail-value">[Your Preferred Name]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Age</div>
+                <div class="detail-value">[Your Age]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Nationality / Location</div>
+                <div class="detail-value">[Your Nationality or City, Country]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Coding Journey</div>
+                <div class="detail-value">[Started at Age X · Built First Project at Age X]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Tech Stacks</div>
+                <div class="detail-value">HTML, CSS, JavaScript, Python</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Current Role</div>
+                <div class="detail-value">Young Web Developer at [Organization / School]</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Career Aspiration</div>
+                <div class="detail-value">[Your Dream Career / Goal]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests Section -->
+      <section class="section" id="interests">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Passions</span>
+            <h2 class="section-title">My Interests</h2>
+            <p class="section-subtitle">
+              The core areas that drive my curiosity, creativity, and technical growth every day.
+            </p>
+          </div>
+
+          <div class="interests-grid">
+            <div class="card interest-card" id="interest-coding">
+              <div class="interest-icon-wrap">&lt;/&gt;</div>
+              <div class="interest-content">
+                <h3>Coding</h3>
+                <p>Writing clean code, solving algorithmic challenges, and bringing ideas to life on the web.</p>
+              </div>
+            </div>
+
+            <div class="card interest-card" id="interest-gaming">
+              <div class="interest-icon-wrap">🎮</div>
+              <div class="interest-content">
+                <h3>Gaming</h3>
+                <p>Exploring immersive virtual worlds, strategic gameplay, and gaming technology mechanics.</p>
+              </div>
+            </div>
+
+            <div class="card interest-card" id="interest-sports">
+              <div class="interest-icon-wrap">⚡</div>
+              <div class="interest-content">
+                <h3>Sports</h3>
+                <p>Staying active, energetic, and practicing discipline, teamwork, and agility on the field.</p>
+              </div>
+            </div>
+
+            <div class="card interest-card" id="interest-aviation">
+              <div class="interest-icon-wrap">✈️</div>
+              <div class="interest-content">
+                <h3>Aviation</h3>
+                <p>Fascinated by aeronautics, commercial flight dynamics, and aspiring to become an airline pilot.</p>
+              </div>
+            </div>
+
+            <div class="card interest-card" id="interest-creative-tech">
+              <div class="interest-icon-wrap">💡</div>
+              <div class="interest-content">
+                <h3>Creative Technology</h3>
+                <p>Experimenting with smart hardware, AI tools, and futuristic workstation concepts.</p>
+              </div>
+            </div>
+
+            <div class="card interest-card" id="interest-web-design">
+              <div class="interest-icon-wrap">🎨</div>
+              <div class="interest-content">
+                <h3>Web Design</h3>
+                <p>Designing modern, responsive, and visually compelling interfaces with dark cyberpunk aesthetics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goals Section -->
+      <section class="section" id="goals">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Vision</span>
+            <h2 class="section-title">My Goals</h2>
+            <p class="section-subtitle">
+              Clear milestones guiding my path as a student, developer, and future pilot.
+            </p>
+          </div>
+
+          <div class="goals-list">
+            <div class="goal-item" id="goal-1">
+              <div class="goal-number">01</div>
+              <div class="goal-text">Become an airline pilot</div>
+            </div>
+
+            <div class="goal-item" id="goal-2">
+              <div class="goal-number">02</div>
+              <div class="goal-text">Build beautiful and useful websites</div>
+            </div>
+
+            <div class="goal-item" id="goal-3">
+              <div class="goal-number">03</div>
+              <div class="goal-text">Improve my programming skills</div>
+            </div>
+
+            <div class="goal-item" id="goal-4">
+              <div class="goal-number">04</div>
+              <div class="goal-text">Create innovative technology projects</div>
+            </div>
+
+            <div class="goal-item" id="goal-5">
+              <div class="goal-number">05</div>
+              <div class="goal-text">Continue learning and growing as a developer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h4>[Your Name]</h4>
+            <p class="footer-role">Young Web Developer at [Organization / School]</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:your-email@example.com">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 [Your Name]. Built with passion and creativity.</p>
+          <p>Young Web Developer at [Organization / School]</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Live Clock Widget (William Le style date & time updater)
+      function updateLiveClock() {
+        const dateEl = document.getElementById('live-date');
+        const timeEl = document.getElementById('live-time');
+        if (!dateEl || !timeEl) return;
+
+        const now = new Date();
+        const dateOptions = { weekday: 'short', month: 'short', day: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('en-US', dateOptions);
+
+        const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+        timeEl.textContent = now.toLocaleTimeString('en-US', timeOptions);
+      }
+      updateLiveClock();
+      setInterval(updateLiveClock, 1000);
+
+      // Mobile navigation toggle
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', () => {
+          const isOpen = navMenu.classList.toggle('nav-open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
+  </body>
+</html>

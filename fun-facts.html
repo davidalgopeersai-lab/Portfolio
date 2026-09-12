@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Facts &amp; Hobbies | Developer Portfolio</title>
+    <meta name="description" content="Hobbies, favorite things, fun facts, and media placeholders for developer portfolio." />
+    <meta property="og:title" content="Fun Facts &amp; Hobbies | Developer Portfolio" />
+    <meta property="og:description" content="Get to know the developer beyond code: aviation, gaming, sports, and creative interests." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Site Navigation -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <div class="nav-left-group">
+          <!-- Ribbon Logo Mark -->
+          <a href="index.html" class="brand-logo-mark" id="brand-logo">
+            <div class="brand-ribbon-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 31V9H21C25.5 9 26.5 19 20.5 19H11H22C27 19 27.5 31 21.5 31H11" stroke="url(#ribbon-grad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="ribbon-grad" x1="6" y1="9" x2="34" y2="31" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00F298"/>
+                    <stop offset="35%" stop-color="#00D8F6"/>
+                    <stop offset="70%" stop-color="#EC4899"/>
+                    <stop offset="100%" stop-color="#A855F7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="brand-titles">
+              <span class="brand-author-name">[Your Name]</span>
+              <span class="brand-author-role">[Role / Tagline]</span>
+            </div>
+          </a>
+
+          <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link" id="nav-home">Home</a>
+            <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            <a href="fun-facts.html" class="nav-link active" id="nav-facts">Fun Facts</a>
+            <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="nav-clock-widget" id="clock-widget">
+          <span class="clock-live-indicator"></span>
+          <span class="clock-date-text" id="live-date">Today</span>
+          <span class="clock-time-text" id="live-time">00:00</span>
+        </div>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="fun-facts-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Behind the Screen</span>
+            <h1 class="section-title">Hobbies &amp; Fun Facts</h1>
+            <p class="section-subtitle">
+              A creative look into my interests outside the code editor — from flight simulators and sports to favorite destinations.
+            </p>
+          </div>
+
+          <!-- Hobbies & Favorite Things Row -->
+          <div class="facts-row">
+            <!-- My Hobbies -->
+            <div class="card" id="card-hobbies">
+              <span class="section-tag">Activities</span>
+              <h2 class="section-title">My Hobbies</h2>
+              <div class="facts-pill-list">
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🎮</span>
+                  Gaming
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">⚡</span>
+                  Sports
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">&lt;/&gt;</span>
+                  Coding
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🔬</span>
+                  Exploring technology
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">📚</span>
+                  Learning new things
+                </span>
+              </div>
+            </div>
+
+            <!-- My Favorite Things -->
+            <div class="card card-gold" id="card-favorites">
+              <span class="section-tag">Preferences</span>
+              <h2 class="section-title">My Favorite Things</h2>
+              <div class="facts-pill-list">
+                <span class="fact-pill">
+                  <span class="fact-item-icon">✈️</span>
+                  Travelling
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🎵</span>
+                  Music
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🛫</span>
+                  Aviation
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🏖️</span>
+                  [Favorite Travel Destination]
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🤖</span>
+                  Futuristic technology
+                </span>
+                <span class="fact-pill">
+                  <span class="fact-item-icon">🕹️</span>
+                  Video games
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Three Fun Facts Cards -->
+          <div class="section-header">
+            <span class="section-tag">Spotlight</span>
+            <h2 class="section-title">Three Fun Facts</h2>
+            <p class="section-subtitle">
+              Quick tidbits about me. These cards are ready for custom updates at any time!
+            </p>
+          </div>
+
+          <div class="fun-fact-cards">
+            <!-- Fun Fact One: Started Coding at 11 -->
+            <div class="fun-fact-card" id="fact-card-1">
+              <span class="fun-fact-number">Fact #01</span>
+              <h3 class="fun-fact-title">Started Coding at 11</h3>
+              <p class="fun-fact-placeholder-text">
+                I wrote my very first lines of code at the age of 11, discovering an early passion for building responsive web apps, solving challenges, and bringing creative ideas to life.
+              </p>
+            </div>
+
+            <!-- Fun Fact Two: Built a Chatbot at 11 -->
+            <div class="fun-fact-card" id="fact-card-2">
+              <span class="fun-fact-number">Fact #02</span>
+              <h3 class="fun-fact-title">Built a Chatbot at 11</h3>
+              <p class="fun-fact-placeholder-text">
+                During my first year of programming at 11, I created my own working chatbot, diving deep into conversational UI, logical decision trees, and intelligent assistant flows.
+              </p>
+            </div>
+
+            <!-- Fun Fact Three: Multilingual Programmer -->
+            <div class="fun-fact-card" id="fact-card-3">
+              <span class="fun-fact-number">Fact #03</span>
+              <h3 class="fun-fact-title">Multilingual Programmer</h3>
+              <p class="fun-fact-placeholder-text">
+                I actively know, explore, and write in multiple programming languages and ecosystems, including HTML, CSS, Dart, Flutter, Python, and micro-embedded hardware scripting.
+              </p>
+            </div>
+          </div>
+
+          <!-- Media Gallery Section -->
+          <div class="section-header">
+            <span class="section-tag">Visual Archives</span>
+            <h2 class="section-title">Media Gallery</h2>
+            <p class="section-subtitle">
+              Reserved placeholder slots for future photos, videos, and project media.
+            </p>
+          </div>
+
+          <div class="media-gallery-grid">
+            <!-- Add your travel image here -->
+            <div class="media-placeholder-card" id="media-travel">
+              <span class="media-icon">🏖️</span>
+              <h3 class="media-placeholder-title">Travel Moments</h3>
+              <p>[Favorite Travel Destination] &amp; Adventures</p>
+              <div class="media-comment-tag">
+                &lt;!-- Add your travel image here --&gt;
+              </div>
+            </div>
+
+            <!-- Add your gaming image here -->
+            <div class="media-placeholder-card" id="media-gaming">
+              <span class="media-icon">🎮</span>
+              <h3 class="media-placeholder-title">Gaming Setup</h3>
+              <p>Clips, setups, and battle stations</p>
+              <div class="media-comment-tag">
+                &lt;!-- Add your gaming image here --&gt;
+              </div>
+            </div>
+
+            <!-- Add your aviation image here -->
+            <div class="media-placeholder-card" id="media-aviation">
+              <span class="media-icon">✈️</span>
+              <h3 class="media-placeholder-title">Aviation &amp; Flights</h3>
+              <p>Aircraft, flight decks, and aviation dreams</p>
+              <div class="media-comment-tag">
+                &lt;!-- Add your aviation image here --&gt;
+              </div>
+            </div>
+
+            <!-- Add your video here -->
+            <div class="media-placeholder-card" id="media-video">
+              <span class="media-icon">🎬</span>
+              <h3 class="media-placeholder-title">Featured Video</h3>
+              <p>Video demos, highlights, and presentations</p>
+              <div class="media-comment-tag">
+                &lt;!-- Add your video here --&gt;
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h4>[Your Name]</h4>
+            <p class="footer-role">Young Web Developer at [Organization / School]</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:your-email@example.com">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 [Your Name]. Built with passion and creativity.</p>
+          <p>Young Web Developer at [Organization / School]</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function updateLiveClock() {
+        const dateEl = document.getElementById('live-date');
+        const timeEl = document.getElementById('live-time');
+        if (!dateEl || !timeEl) return;
+
+        const now = new Date();
+        const dateOptions = { weekday: 'short', month: 'short', day: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('en-US', dateOptions);
+
+        const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+        timeEl.textContent = now.toLocaleTimeString('en-US', timeOptions);
+      }
+      updateLiveClock();
+      setInterval(updateLiveClock, 1000);
+
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', () => {
+          const isOpen = navMenu.classList.toggle('nav-open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
+  </body>
+</html>

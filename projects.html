@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Developer Portfolio</title>
+    <meta name="description" content="Explore projects including health assistance apps, community platforms, hardware monitors, and creative tech." />
+    <meta property="og:title" content="Projects | Developer Portfolio" />
+    <meta property="og:description" content="Explore projects by young web developer, showcasing software and creative technology." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Site Navigation -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <div class="nav-left-group">
+          <!-- Ribbon Logo Mark -->
+          <a href="index.html" class="brand-logo-mark" id="brand-logo">
+            <div class="brand-ribbon-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 31V9H21C25.5 9 26.5 19 20.5 19H11H22C27 19 27.5 31 21.5 31H11" stroke="url(#ribbon-grad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="ribbon-grad" x1="6" y1="9" x2="34" y2="31" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00F298"/>
+                    <stop offset="35%" stop-color="#00D8F6"/>
+                    <stop offset="70%" stop-color="#EC4899"/>
+                    <stop offset="100%" stop-color="#A855F7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="brand-titles">
+              <span class="brand-author-name">[Your Name]</span>
+              <span class="brand-author-role">[Role / Tagline]</span>
+            </div>
+          </a>
+
+          <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link" id="nav-home">Home</a>
+            <a href="projects.html" class="nav-link active" id="nav-projects">Projects</a>
+            <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            <a href="fun-facts.html" class="nav-link" id="nav-facts">Fun Facts</a>
+            <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="nav-clock-widget" id="clock-widget">
+          <span class="clock-live-indicator"></span>
+          <span class="clock-date-text" id="live-date">Today</span>
+          <span class="clock-time-text" id="live-time">00:00</span>
+        </div>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="projects-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Portfolio Showcase</span>
+            <h1 class="section-title">Featured Projects</h1>
+            <p class="section-subtitle">
+              A collection of web applications, hardware prototypes, software concepts, and creative technology experiments.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Healthio -->
+            <article class="card project-card" id="project-healthio">
+              <div class="project-card-header">
+                <div class="project-status-row">
+                  <span class="project-category">Healthcare · Web</span>
+                  <span class="badge badge-live">
+                    <span class="status-dot status-dot-green"></span>
+                    Live Project
+                  </span>
+                </div>
+                <h2 class="project-title">Healthio — Health Assistance Website</h2>
+                <p class="project-desc">
+                  Healthio is a health-focused website designed to help users find nearby hospitals and access basic health guidance.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="badge badge-purple">Google AI Studio</span>
+                  <span class="badge badge-blue">ChatGPT</span>
+                  <span class="badge badge-green">Web Development</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="btn-group">
+                  <a
+                    href="https://healthio-theta.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                    id="btn-healthio-live"
+                  >
+                    View Live Website ↗
+                  </a>
+                  <a
+                    href="https://github.com/[your-username]/Healthio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                    id="btn-healthio-github"
+                  >
+                    View GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Flutter Developer Hub -->
+            <article class="card project-card" id="project-flutter-hub">
+              <div class="project-card-header">
+                <div class="project-status-row">
+                  <span class="project-category">Mobile &amp; Community</span>
+                  <span class="badge badge-purple">
+                    <span class="status-dot status-dot-purple"></span>
+                    Concept / In Development
+                  </span>
+                </div>
+                <h2 class="project-title">Flutter Developer Hub</h2>
+                <p class="project-desc">
+                  A developer community app concept designed for software engineers and UI/UX designers to connect, communicate, and collaborate.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="badge badge-blue">Flutter</span>
+                  <span class="badge badge-purple">Dart</span>
+                  <span class="badge badge-green">UI/UX Design</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <span class="badge">In Active Conceptual Design</span>
+              </div>
+            </article>
+
+            <!-- Project 3: Air Quality Monitor -->
+            <article class="card project-card" id="project-air-quality">
+              <div class="project-card-header">
+                <div class="project-status-row">
+                  <span class="project-category">Hardware &amp; IoT</span>
+                  <span class="badge badge-blue">
+                    <span class="status-dot status-dot-blue"></span>
+                    Electronics Project
+                  </span>
+                </div>
+                <h2 class="project-title">Air Quality Monitor</h2>
+                <p class="project-desc">
+                  A Raspberry Pi Pico W air-quality monitoring project using an MQ-2 sensor, OLED display, and warning LEDs.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="badge badge-purple">Raspberry Pi Pico W</span>
+                  <span class="badge">Wokwi</span>
+                  <span class="badge badge-blue">MQ-2 Sensor</span>
+                  <span class="badge">OLED Display</span>
+                  <span class="badge badge-green">Electronics</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <span class="badge">Hardware Simulation on Wokwi</span>
+              </div>
+            </article>
+
+            <!-- Project 4: Creative Technology Projects -->
+            <article class="card project-card" id="project-creative-tech">
+              <div class="project-card-header">
+                <div class="project-status-row">
+                  <span class="project-category">Future Tech &amp; R&amp;D</span>
+                  <span class="badge badge-green">
+                    <span class="status-dot status-dot-green"></span>
+                    Experimental Projects
+                  </span>
+                </div>
+                <h2 class="project-title">Creative Technology Projects</h2>
+                <p class="project-desc">
+                  I enjoy exploring creative technology ideas such as AI assistants, smart devices, motion-controlled systems, and futuristic workstations.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="badge badge-purple">AI Tools</span>
+                  <span class="badge badge-blue">Electronics</span>
+                  <span class="badge badge-green">Creative Technology</span>
+                  <span class="badge">Research and Experimentation</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <span class="badge">Ongoing Exploration</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h4>[Your Name]</h4>
+            <p class="footer-role">Young Web Developer at [Organization / School]</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:your-email@example.com">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 [Your Name]. Built with passion and creativity.</p>
+          <p>Young Web Developer at [Organization / School]</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function updateLiveClock() {
+        const dateEl = document.getElementById('live-date');
+        const timeEl = document.getElementById('live-time');
+        if (!dateEl || !timeEl) return;
+
+        const now = new Date();
+        const dateOptions = { weekday: 'short', month: 'short', day: 'numeric' };
+        dateEl.textContent = now.toLocaleDateString('en-US', dateOptions);
+
+        const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+        timeEl.textContent = now.toLocaleTimeString('en-US', timeOptions);
+      }
+      updateLiveClock();
+      setInterval(updateLiveClock, 1000);
+
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener('click', () => {
+          const isOpen = navMenu.classList.toggle('nav-open');
+          toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
+  </body>
+</html>
